@@ -1,0 +1,465 @@
+2025-09-01 20:43:10,908 | __main__ | INFO | init_app:100 | Application configured for development environment
+2025-09-01 20:43:10,914 | __main__ | INFO | <module>:517 | ============================================================
+2025-09-01 20:43:10,915 | __main__ | INFO | <module>:518 | GeoPhoto Application Starting
+2025-09-01 20:43:10,915 | __main__ | INFO | <module>:519 | Environment: development
+2025-09-01 20:43:10,918 | __main__ | INFO | <module>:520 | Debug Mode: False
+2025-09-01 20:43:10,919 | __main__ | INFO | <module>:521 | Upload Folder: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads
+2025-09-01 20:43:10,921 | __main__ | INFO | <module>:522 | ============================================================
+2025-09-01 20:43:11,365 | werkzeug | INFO | _log:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-01 20:43:11,365 | werkzeug | INFO | _log:97 | [33mPress CTRL+C to quit[0m
+2025-09-01 20:43:11,395 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-01 20:43:12,531 | __main__ | INFO | init_app:100 | Application configured for development environment
+2025-09-01 20:43:12,535 | __main__ | INFO | <module>:517 | ============================================================
+2025-09-01 20:43:12,536 | __main__ | INFO | <module>:518 | GeoPhoto Application Starting
+2025-09-01 20:43:12,537 | __main__ | INFO | <module>:519 | Environment: development
+2025-09-01 20:43:12,537 | __main__ | INFO | <module>:520 | Debug Mode: False
+2025-09-01 20:43:12,538 | __main__ | INFO | <module>:521 | Upload Folder: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads
+2025-09-01 20:43:12,538 | __main__ | INFO | <module>:522 | ============================================================
+2025-09-01 20:43:12,606 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-01 20:43:12,622 | werkzeug | INFO | _log:97 |  * Debugger PIN: 692-669-474
+2025-09-01 20:45:46,040 | __main__ | INFO | init_app:100 | Application configured for development environment
+2025-09-01 20:45:46,043 | __main__ | INFO | <module>:517 | ============================================================
+2025-09-01 20:45:46,044 | __main__ | INFO | <module>:518 | GeoPhoto Application Starting
+2025-09-01 20:45:46,044 | __main__ | INFO | <module>:519 | Environment: development
+2025-09-01 20:45:46,046 | __main__ | INFO | <module>:520 | Debug Mode: False
+2025-09-01 20:45:46,046 | __main__ | INFO | <module>:521 | Upload Folder: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads
+2025-09-01 20:45:46,046 | __main__ | INFO | <module>:522 | ============================================================
+2025-09-01 20:45:46,144 | werkzeug | INFO | _log:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-01 20:45:46,144 | werkzeug | INFO | _log:97 | [33mPress CTRL+C to quit[0m
+2025-09-01 20:45:46,149 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-01 20:45:47,161 | __main__ | INFO | init_app:100 | Application configured for development environment
+2025-09-01 20:45:47,165 | __main__ | INFO | <module>:517 | ============================================================
+2025-09-01 20:45:47,166 | __main__ | INFO | <module>:518 | GeoPhoto Application Starting
+2025-09-01 20:45:47,167 | __main__ | INFO | <module>:519 | Environment: development
+2025-09-01 20:45:47,167 | __main__ | INFO | <module>:520 | Debug Mode: False
+2025-09-01 20:45:47,168 | __main__ | INFO | <module>:521 | Upload Folder: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads
+2025-09-01 20:45:47,169 | __main__ | INFO | <module>:522 | ============================================================
+2025-09-01 20:45:47,223 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-01 20:45:47,235 | werkzeug | INFO | _log:97 |  * Debugger PIN: 692-669-474
+2025-09-02 02:50:41,230 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:50:41] "GET / HTTP/1.1" 200 -
+2025-09-02 02:50:41,324 | __main__ | WARNING | not_found_error:386 | 404 error: http://127.0.0.1:5000/static/css/style.css
+2025-09-02 02:50:41,329 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:50:41] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-09-02 02:50:41,714 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:50:41] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-09-02 02:50:41,744 | __main__ | WARNING | not_found_error:386 | 404 error: http://127.0.0.1:5000/favicon.ico
+2025-09-02 02:50:41,747 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:50:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-09-02 02:51:00,070 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads\20250902_025059_geoprojeto.jpg
+2025-09-02 02:51:01,295 | __main__ | INFO | extract_gps_with_exifread:339 | ExifRead extracted: 35.747145299640664, -5.823976424180057
+2025-09-02 02:51:01,296 | __main__ | INFO | index:457 | ✓ Success for geoprojeto.jpg: 35.747145299640664, -5.823976424180057
+2025-09-02 02:51:01,306 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:51:01] "POST / HTTP/1.1" 200 -
+2025-09-02 02:51:01,361 | __main__ | WARNING | not_found_error:386 | 404 error: http://127.0.0.1:5000/static/css/style.css
+2025-09-02 02:51:01,366 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:51:01] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-09-02 02:51:01,369 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:51:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-02 02:51:50,068 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads\20250902_025150_luciano.jpg
+2025-09-02 02:51:50,098 | __main__ | WARNING | extract_coordinates:372 | All extraction methods failed
+2025-09-02 02:51:50,100 | __main__ | WARNING | index:467 | No GPS data in luciano.jpg
+2025-09-02 02:51:50,103 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:51:50] "POST / HTTP/1.1" 200 -
+2025-09-02 02:51:50,169 | __main__ | WARNING | not_found_error:386 | 404 error: http://127.0.0.1:5000/static/css/style.css
+2025-09-02 02:51:50,173 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:51:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-02 02:51:50,174 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:51:50] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-09-02 02:52:35,049 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads\20250902_025234_geoprojeto.jpg
+2025-09-02 02:52:35,077 | __main__ | ERROR | extract_gps_with_exifread:346 | ExifRead extraction failed: float division by zero
+2025-09-02 02:52:35,079 | __main__ | WARNING | extract_coordinates:372 | All extraction methods failed
+2025-09-02 02:52:35,081 | __main__ | WARNING | index:467 | No GPS data in geoprojeto.jpg
+2025-09-02 02:52:35,090 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:52:35] "POST / HTTP/1.1" 200 -
+2025-09-02 02:52:35,142 | __main__ | WARNING | not_found_error:386 | 404 error: http://127.0.0.1:5000/static/css/style.css
+2025-09-02 02:52:35,145 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:52:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-02 02:52:35,146 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:52:35] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-09-02 02:52:42,541 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads\20250902_025242_luciano.jpg
+2025-09-02 02:52:42,567 | __main__ | WARNING | extract_coordinates:372 | All extraction methods failed
+2025-09-02 02:52:42,568 | __main__ | WARNING | index:467 | No GPS data in luciano.jpg
+2025-09-02 02:52:42,571 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:52:42] "POST / HTTP/1.1" 200 -
+2025-09-02 02:52:42,619 | __main__ | WARNING | not_found_error:386 | 404 error: http://127.0.0.1:5000/static/css/style.css
+2025-09-02 02:52:42,626 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:52:42] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-09-02 02:52:42,629 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:52:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-02 02:52:55,260 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads\20250902_025255_luciano.jpg
+2025-09-02 02:52:55,282 | __main__ | WARNING | extract_coordinates:372 | All extraction methods failed
+2025-09-02 02:52:55,282 | __main__ | WARNING | index:467 | No GPS data in luciano.jpg
+2025-09-02 02:52:55,285 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:52:55] "POST / HTTP/1.1" 200 -
+2025-09-02 02:52:55,333 | __main__ | WARNING | not_found_error:386 | 404 error: http://127.0.0.1:5000/static/css/style.css
+2025-09-02 02:52:55,337 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:52:55] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-09-02 02:52:55,338 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:52:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-02 02:53:19,661 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads\20250902_025319_geoprojeto.jpg
+2025-09-02 02:53:19,690 | __main__ | INFO | extract_gps_with_exifread:339 | ExifRead extracted: 35.747145299640664, -5.823976424180057
+2025-09-02 02:53:19,692 | __main__ | INFO | index:457 | ✓ Success for geoprojeto.jpg: 35.747145299640664, -5.823976424180057
+2025-09-02 02:53:19,699 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:53:19] "POST / HTTP/1.1" 200 -
+2025-09-02 02:53:19,749 | __main__ | WARNING | not_found_error:386 | 404 error: http://127.0.0.1:5000/static/css/style.css
+2025-09-02 02:53:19,752 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:53:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-02 02:53:19,753 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 02:53:19] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-09-02 03:01:50,628 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads\20250902_030150_geoprojeto.jpg
+2025-09-02 03:01:50,661 | __main__ | INFO | extract_gps_with_exifread:339 | ExifRead extracted: 35.747145299640664, -5.823976424180057
+2025-09-02 03:01:50,663 | __main__ | INFO | index:457 | ✓ Success for geoprojeto.jpg: 35.747145299640664, -5.823976424180057
+2025-09-02 03:01:50,835 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:01:50] "POST / HTTP/1.1" 200 -
+2025-09-02 03:01:50,890 | __main__ | WARNING | not_found_error:386 | 404 error: http://127.0.0.1:5000/static/css/style.css
+2025-09-02 03:01:50,894 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:01:50] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-09-02 03:01:50,958 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:01:50] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-09-02 03:02:02,160 | __main__ | WARNING | not_found_error:386 | 404 error: http://127.0.0.1:5000/static/css/style.css
+2025-09-02 03:02:02,166 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:02:02] "[33mGET /static/css/style.css HTTP/1.1[0m" 404 -
+2025-09-02 03:02:02,192 | __main__ | WARNING | not_found_error:386 | 404 error: http://127.0.0.1:5000/.well-known/appspecific/com.chrome.devtools.json
+2025-09-02 03:02:02,195 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:02:02] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-09-02 03:12:43,793 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads\20250902_031243_geoprojeto.jpg
+2025-09-02 03:12:43,827 | __main__ | INFO | extract_gps_with_exifread:339 | ExifRead extracted: 35.747145299640664, -5.823976424180057
+2025-09-02 03:12:43,829 | __main__ | INFO | index:457 | ✓ Success for geoprojeto.jpg: 35.747145299640664, -5.823976424180057
+2025-09-02 03:12:44,023 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:12:44] "POST / HTTP/1.1" 200 -
+2025-09-02 03:12:44,084 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:12:44] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-09-02 03:12:44,086 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:12:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-02 03:13:54,787 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads\20250902_031354_geoprojeto.jpg
+2025-09-02 03:13:54,823 | __main__ | INFO | extract_gps_with_exifread:339 | ExifRead extracted: 35.747145299640664, -5.823976424180057
+2025-09-02 03:13:54,827 | __main__ | INFO | index:457 | ✓ Success for geoprojeto.jpg: 35.747145299640664, -5.823976424180057
+2025-09-02 03:13:54,837 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:13:54] "POST / HTTP/1.1" 200 -
+2025-09-02 03:13:54,903 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:13:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-02 03:13:54,911 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:13:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-02 03:29:40,487 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads\20250902_032940_geoprojeto.jpg
+2025-09-02 03:29:40,532 | __main__ | INFO | extract_gps_with_exifread:339 | ExifRead extracted: 35.747145299640664, -5.823976424180057
+2025-09-02 03:29:40,534 | __main__ | INFO | index:457 | ✓ Success for geoprojeto.jpg: 35.747145299640664, -5.823976424180057
+2025-09-02 03:29:40,549 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:29:40] "POST / HTTP/1.1" 200 -
+2025-09-02 03:29:40,616 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:29:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-02 03:29:40,654 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:29:40] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-09-02 03:30:16,717 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\geophoto(Claude)\uploads\20250902_033016_geoprojeto.jpg
+2025-09-02 03:30:16,752 | __main__ | INFO | extract_gps_with_exifread:339 | ExifRead extracted: 35.747145299640664, -5.823976424180057
+2025-09-02 03:30:16,753 | __main__ | INFO | index:457 | ✓ Success for geoprojeto.jpg: 35.747145299640664, -5.823976424180057
+2025-09-02 03:30:16,761 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:30:16] "POST / HTTP/1.1" 200 -
+2025-09-02 03:30:16,814 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:30:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-02 03:30:16,822 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [02/Sep/2025 03:30:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 04:45:29,530 | __main__ | INFO | init_app:100 | Application configured for development environment
+2025-09-04 04:45:29,538 | __main__ | INFO | <module>:517 | ============================================================
+2025-09-04 04:45:29,539 | __main__ | INFO | <module>:518 | GeoPhoto Application Starting
+2025-09-04 04:45:29,539 | __main__ | INFO | <module>:519 | Environment: development
+2025-09-04 04:45:29,540 | __main__ | INFO | <module>:520 | Debug Mode: False
+2025-09-04 04:45:29,541 | __main__ | INFO | <module>:521 | Upload Folder: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads
+2025-09-04 04:45:29,541 | __main__ | INFO | <module>:522 | ============================================================
+2025-09-04 04:45:29,892 | werkzeug | INFO | _log:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-04 04:45:29,894 | werkzeug | INFO | _log:97 | [33mPress CTRL+C to quit[0m
+2025-09-04 04:45:29,924 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-04 04:45:30,928 | __main__ | INFO | init_app:100 | Application configured for development environment
+2025-09-04 04:45:30,932 | __main__ | INFO | <module>:517 | ============================================================
+2025-09-04 04:45:30,933 | __main__ | INFO | <module>:518 | GeoPhoto Application Starting
+2025-09-04 04:45:30,933 | __main__ | INFO | <module>:519 | Environment: development
+2025-09-04 04:45:30,935 | __main__ | INFO | <module>:520 | Debug Mode: False
+2025-09-04 04:45:30,935 | __main__ | INFO | <module>:521 | Upload Folder: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads
+2025-09-04 04:45:30,936 | __main__ | INFO | <module>:522 | ============================================================
+2025-09-04 04:45:31,008 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-04 04:45:31,027 | werkzeug | INFO | _log:97 |  * Debugger PIN: 692-669-474
+2025-09-04 04:45:48,667 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:45:48] "GET / HTTP/1.1" 200 -
+2025-09-04 04:45:49,252 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:45:49] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-09-04 04:45:49,280 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:45:49] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-09-04 04:47:04,637 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250904_044704_geoprojeto.jpg
+2025-09-04 04:47:05,572 | __main__ | INFO | extract_gps_with_exifread:339 | ExifRead extracted: 35.747145299640664, -5.823976424180057
+2025-09-04 04:47:05,574 | __main__ | INFO | index:457 | ✓ Success for geoprojeto.jpg: 35.747145299640664, -5.823976424180057
+2025-09-04 04:47:05,584 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:47:05] "POST / HTTP/1.1" 200 -
+2025-09-04 04:47:05,639 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:47:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 04:47:05,648 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:47:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 04:48:10,124 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250904_044810_geoprojeto.jpg
+2025-09-04 04:48:10,161 | __main__ | INFO | extract_gps_with_exifread:339 | ExifRead extracted: 35.747145299640664, -5.823976424180057
+2025-09-04 04:48:10,162 | __main__ | INFO | index:457 | ✓ Success for geoprojeto.jpg: 35.747145299640664, -5.823976424180057
+2025-09-04 04:48:10,173 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:48:10] "POST / HTTP/1.1" 200 -
+2025-09-04 04:48:10,219 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:48:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 04:48:10,226 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:48:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 04:48:40,841 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:48:40] "GET / HTTP/1.1" 200 -
+2025-09-04 04:48:40,944 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:48:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 04:48:40,946 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:48:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 04:49:56,817 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250904_044956_geoprojeto.jpg
+2025-09-04 04:49:56,859 | __main__ | INFO | extract_gps_with_exifread:339 | ExifRead extracted: 35.747145299640664, -5.823976424180057
+2025-09-04 04:49:56,863 | __main__ | INFO | index:457 | ✓ Success for geoprojeto.jpg: 35.747145299640664, -5.823976424180057
+2025-09-04 04:49:56,878 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:49:56] "POST / HTTP/1.1" 200 -
+2025-09-04 04:49:56,955 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:49:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 04:49:56,970 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:49:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 04:55:25,189 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:55:25] "GET / HTTP/1.1" 200 -
+2025-09-04 04:55:25,228 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:55:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 04:55:25,228 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:55:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 04:56:25,355 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250904_045625_geoprojeto_1.jpg
+2025-09-04 04:56:25,402 | __main__ | INFO | extract_gps_with_exifread:339 | ExifRead extracted: 43.10538719622779, 12.375374436415292
+2025-09-04 04:56:25,404 | __main__ | INFO | index:457 | ✓ Success for geoprojeto_1.jpg: 43.10538719622779, 12.375374436415292
+2025-09-04 04:56:25,420 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:56:25] "POST / HTTP/1.1" 200 -
+2025-09-04 04:56:25,489 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:56:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 04:56:25,491 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:56:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 04:58:50,834 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:58:50] "GET / HTTP/1.1" 200 -
+2025-09-04 04:58:50,890 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:58:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 04:58:50,892 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:58:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 04:59:39,018 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250904_045938_geoprojeto_1.jpg
+2025-09-04 04:59:39,054 | __main__ | INFO | extract_gps_with_exifread:339 | ExifRead extracted: 43.10538719622779, 12.375374436415292
+2025-09-04 04:59:39,055 | __main__ | INFO | index:457 | ✓ Success for geoprojeto_1.jpg: 43.10538719622779, 12.375374436415292
+2025-09-04 04:59:39,070 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:59:39] "POST / HTTP/1.1" 200 -
+2025-09-04 04:59:39,137 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:59:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 04:59:39,141 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 04:59:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 05:10:12,418 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:10:12] "GET / HTTP/1.1" 200 -
+2025-09-04 05:10:12,553 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:10:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 05:10:12,556 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:10:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 05:11:16,611 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250904_051116_5893079736299670418.jpg
+2025-09-04 05:11:16,663 | __main__ | WARNING | extract_coordinates:372 | All extraction methods failed
+2025-09-04 05:11:16,665 | __main__ | WARNING | index:467 | No GPS data in 5893079736299670418.jpg
+2025-09-04 05:11:16,673 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:11:16] "POST / HTTP/1.1" 200 -
+2025-09-04 05:11:16,748 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:11:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 05:11:16,749 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:11:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 05:13:55,193 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250904_051355_5893079736299670418.jpg
+2025-09-04 05:13:55,229 | __main__ | WARNING | extract_coordinates:372 | All extraction methods failed
+2025-09-04 05:13:55,230 | __main__ | WARNING | index:467 | No GPS data in 5893079736299670418.jpg
+2025-09-04 05:13:55,241 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:13:55] "POST / HTTP/1.1" 200 -
+2025-09-04 05:13:55,312 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:13:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 05:13:55,320 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:13:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 05:14:08,802 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250904_051408_5893079736299670418.jpg
+2025-09-04 05:14:08,835 | __main__ | WARNING | extract_coordinates:372 | All extraction methods failed
+2025-09-04 05:14:08,837 | __main__ | WARNING | index:467 | No GPS data in 5893079736299670418.jpg
+2025-09-04 05:14:08,844 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:14:08] "POST / HTTP/1.1" 200 -
+2025-09-04 05:14:08,910 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:14:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 05:14:08,917 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:14:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 05:15:48,372 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250904_051548_5893079736299670418_1.jpg
+2025-09-04 05:15:48,425 | __main__ | INFO | extract_gps_with_exifread:339 | ExifRead extracted: 43.10538719622779, 12.375374436415292
+2025-09-04 05:15:48,428 | __main__ | INFO | index:457 | ✓ Success for 5893079736299670418_1.jpg: 43.10538719622779, 12.375374436415292
+2025-09-04 05:15:48,437 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:15:48] "POST / HTTP/1.1" 200 -
+2025-09-04 05:15:48,506 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:15:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 05:15:48,507 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:15:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 05:16:32,465 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:16:32] "GET / HTTP/1.1" 200 -
+2025-09-04 05:16:32,573 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:16:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 05:16:32,574 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:16:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-04 05:17:24,042 | __main__ | INFO | index:448 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250904_051724_5893079736299670418_1.jpg
+2025-09-04 05:17:24,068 | __main__ | INFO | extract_gps_with_exifread:339 | ExifRead extracted: 43.10538719622779, 12.375374436415292
+2025-09-04 05:17:24,071 | __main__ | INFO | index:457 | ✓ Success for 5893079736299670418_1.jpg: 43.10538719622779, 12.375374436415292
+2025-09-04 05:17:24,080 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:17:24] "POST / HTTP/1.1" 200 -
+2025-09-04 05:17:24,152 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:17:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-04 05:17:24,152 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [04/Sep/2025 05:17:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-11 02:48:29,500 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 02:48:29,504 | __main__ | INFO | <module>:444 | ============================================================
+2025-09-11 02:48:29,505 | __main__ | INFO | <module>:445 | GeoPhoto Enhanced Application Starting
+2025-09-11 02:48:29,505 | __main__ | INFO | <module>:446 | Environment: development
+2025-09-11 02:48:29,506 | __main__ | INFO | <module>:447 | ============================================================
+2025-09-11 02:48:29,759 | werkzeug | INFO | _log:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-11 02:48:29,760 | werkzeug | INFO | _log:97 | [33mPress CTRL+C to quit[0m
+2025-09-11 02:48:29,783 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 02:48:30,771 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 02:48:30,774 | __main__ | INFO | <module>:444 | ============================================================
+2025-09-11 02:48:30,776 | __main__ | INFO | <module>:445 | GeoPhoto Enhanced Application Starting
+2025-09-11 02:48:30,776 | __main__ | INFO | <module>:446 | Environment: development
+2025-09-11 02:48:30,776 | __main__ | INFO | <module>:447 | ============================================================
+2025-09-11 02:48:30,841 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 02:48:30,858 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 02:48:54,608 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 02:48:54] "GET / HTTP/1.1" 200 -
+2025-09-11 02:48:55,225 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 02:48:55] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-09-11 02:48:55,245 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 02:48:55] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-09-11 02:50:18,439 | __main__ | INFO | index:356 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250911_025018_20250903_153853.jpg
+2025-09-11 02:50:19,610 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 02:50:19] "POST / HTTP/1.1" 200 -
+2025-09-11 02:50:19,696 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 02:50:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-11 02:50:20,614 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 02:50:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-11 02:52:06,180 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 02:52:06] "POST /update-gps HTTP/1.1" 200 -
+2025-09-11 02:54:18,006 | __main__ | INFO | index:356 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250911_025417_20250903_153853.jpg
+2025-09-11 02:54:18,323 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 02:54:18] "POST / HTTP/1.1" 200 -
+2025-09-11 02:54:18,411 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 02:54:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-11 02:54:19,332 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 02:54:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-11 02:54:31,081 | __main__ | INFO | index:356 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250911_025431_gps_updated_20250903_153853.jpg
+2025-09-11 02:54:31,204 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 02:54:31] "POST / HTTP/1.1" 200 -
+2025-09-11 02:54:31,263 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 02:54:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-11 02:54:32,040 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 02:54:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-11 03:01:42,206 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\test_app.py', reloading
+2025-09-11 03:01:42,435 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:01:43,746 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:01:43,750 | __main__ | INFO | <module>:444 | ============================================================
+2025-09-11 03:01:43,751 | __main__ | INFO | <module>:445 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:01:43,751 | __main__ | INFO | <module>:446 | Environment: development
+2025-09-11 03:01:43,752 | __main__ | INFO | <module>:447 | ============================================================
+2025-09-11 03:01:43,840 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:01:43,860 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:02:20,697 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\app.py', reloading
+2025-09-11 03:02:20,847 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:02:21,944 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:02:21,949 | __main__ | INFO | <module>:486 | ============================================================
+2025-09-11 03:02:21,949 | __main__ | INFO | <module>:487 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:02:21,951 | __main__ | INFO | <module>:488 | Environment: development
+2025-09-11 03:02:21,952 | __main__ | INFO | <module>:489 | ============================================================
+2025-09-11 03:02:22,011 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:02:22,027 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:02:33,530 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\app.py', reloading
+2025-09-11 03:02:33,716 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:02:35,138 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:02:35,146 | __main__ | INFO | <module>:556 | ============================================================
+2025-09-11 03:02:35,149 | __main__ | INFO | <module>:557 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:02:35,157 | __main__ | INFO | <module>:558 | Environment: development
+2025-09-11 03:02:35,159 | __main__ | INFO | <module>:559 | ============================================================
+2025-09-11 03:02:35,244 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:02:35,266 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:02:45,735 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\app.py', reloading
+2025-09-11 03:02:45,886 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:02:46,991 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:02:46,995 | __main__ | INFO | <module>:556 | ============================================================
+2025-09-11 03:02:46,996 | __main__ | INFO | <module>:557 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:02:46,997 | __main__ | INFO | <module>:558 | Environment: development
+2025-09-11 03:02:46,999 | __main__ | INFO | <module>:559 | ============================================================
+2025-09-11 03:02:47,064 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:02:47,080 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:02:56,458 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\app.py', reloading
+2025-09-11 03:02:56,599 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:02:57,800 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:02:57,806 | __main__ | INFO | <module>:609 | ============================================================
+2025-09-11 03:02:57,808 | __main__ | INFO | <module>:610 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:02:57,808 | __main__ | INFO | <module>:611 | Environment: development
+2025-09-11 03:02:57,810 | __main__ | INFO | <module>:612 | ============================================================
+2025-09-11 03:02:57,893 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:02:57,911 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:03:15,870 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\app.py', reloading
+2025-09-11 03:03:15,986 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:03:17,095 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:03:17,100 | __main__ | INFO | <module>:632 | ============================================================
+2025-09-11 03:03:17,101 | __main__ | INFO | <module>:633 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:03:17,101 | __main__ | INFO | <module>:634 | Environment: development
+2025-09-11 03:03:17,101 | __main__ | INFO | <module>:635 | ============================================================
+2025-09-11 03:03:17,173 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:03:17,186 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:03:40,725 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:03:40,731 | __main__ | INFO | <module>:632 | ============================================================
+2025-09-11 03:03:40,733 | __main__ | INFO | <module>:633 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:03:40,735 | __main__ | INFO | <module>:634 | Environment: development
+2025-09-11 03:03:40,736 | __main__ | INFO | <module>:635 | ============================================================
+2025-09-11 03:03:40,878 | werkzeug | INFO | _log:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-11 03:03:40,880 | werkzeug | INFO | _log:97 | [33mPress CTRL+C to quit[0m
+2025-09-11 03:03:40,885 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:03:42,176 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:03:42,181 | __main__ | INFO | <module>:632 | ============================================================
+2025-09-11 03:03:42,182 | __main__ | INFO | <module>:633 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:03:42,183 | __main__ | INFO | <module>:634 | Environment: development
+2025-09-11 03:03:42,185 | __main__ | INFO | <module>:635 | ============================================================
+2025-09-11 03:03:42,244 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:03:42,262 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:03:49,624 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\app.py', reloading
+2025-09-11 03:03:49,778 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:03:50,976 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:03:50,981 | __main__ | INFO | <module>:632 | ============================================================
+2025-09-11 03:03:50,983 | __main__ | INFO | <module>:633 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:03:50,983 | __main__ | INFO | <module>:634 | Environment: development
+2025-09-11 03:03:50,985 | __main__ | INFO | <module>:635 | ============================================================
+2025-09-11 03:03:51,041 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:03:51,057 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:04:02,829 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\app.py', reloading
+2025-09-11 03:04:02,879 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\app.py', reloading
+2025-09-11 03:04:02,978 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:04:03,024 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:04:04,113 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:04:04,116 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:04:04,121 | __main__ | INFO | <module>:632 | ============================================================
+2025-09-11 03:04:04,121 | __main__ | INFO | <module>:633 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:04:04,123 | __main__ | INFO | <module>:634 | Environment: development
+2025-09-11 03:04:04,123 | __main__ | INFO | <module>:635 | ============================================================
+2025-09-11 03:04:04,123 | __main__ | INFO | <module>:634 | Environment: development
+2025-09-11 03:04:04,124 | __main__ | INFO | <module>:635 | ============================================================
+2025-09-11 03:04:04,203 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:04:04,205 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:04:04,222 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:04:04,227 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:04:11,163 | __main__ | INFO | index:544 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250911_030411_gps_updated_20250903_153853.jpg
+2025-09-11 03:04:11,283 | __main__ | WARNING | extract_all_exif:434 | Failed to extract GPS coordinates from all strategies
+2025-09-11 03:04:11,460 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:04:11] "POST / HTTP/1.1" 200 -
+2025-09-11 03:04:11,965 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:04:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-11 03:04:12,096 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:04:12] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-09-11 03:04:20,953 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:04:20] "GET / HTTP/1.1" 200 -
+2025-09-11 03:04:21,026 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:04:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-11 03:04:21,032 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:04:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-11 03:04:34,790 | __main__ | INFO | index:544 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250911_030434_gps_updated_20250903_153853.jpg
+2025-09-11 03:04:34,840 | __main__ | WARNING | extract_all_exif:434 | Failed to extract GPS coordinates from all strategies
+2025-09-11 03:04:34,946 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:04:34] "POST / HTTP/1.1" 200 -
+2025-09-11 03:04:35,004 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:04:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-11 03:04:35,699 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:04:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-11 03:05:19,978 | __main__ | INFO | index:544 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250911_030519_20250903_153853.jpg
+2025-09-11 03:05:20,014 | __main__ | WARNING | extract_all_exif:434 | Failed to extract GPS coordinates from all strategies
+2025-09-11 03:05:20,405 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:05:20] "POST / HTTP/1.1" 200 -
+2025-09-11 03:05:20,478 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:05:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-11 03:05:21,348 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:05:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-11 03:17:04,404 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\app.py', reloading
+2025-09-11 03:17:04,636 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:17:07,493 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:17:07,496 | __main__ | INFO | <module>:637 | ============================================================
+2025-09-11 03:17:07,497 | __main__ | INFO | <module>:638 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:17:07,498 | __main__ | INFO | <module>:639 | Environment: development
+2025-09-11 03:17:07,498 | __main__ | INFO | <module>:640 | ============================================================
+2025-09-11 03:17:07,671 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:17:07,689 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:17:15,255 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\app.py', reloading
+2025-09-11 03:17:15,366 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:18:17,792 | app | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:18:17,796 | app | INFO | dms_to_decimal:169 | Successfully converted GPS coordinates: (43.0, 6.0, 13.118964310706787) -> 43.10364415675298
+2025-09-11 03:18:17,798 | app | INFO | dms_to_decimal:169 | Successfully converted GPS coordinates: (12.0, 22.0, 31.483154121863798) -> 12.375411987256074
+2025-09-11 03:18:25,402 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:18:25,406 | __main__ | INFO | <module>:683 | ============================================================
+2025-09-11 03:18:25,407 | __main__ | INFO | <module>:684 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:18:25,408 | __main__ | INFO | <module>:685 | Environment: development
+2025-09-11 03:18:25,409 | __main__ | INFO | <module>:686 | ============================================================
+2025-09-11 03:18:25,559 | werkzeug | INFO | _log:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-11 03:18:25,561 | werkzeug | INFO | _log:97 | [33mPress CTRL+C to quit[0m
+2025-09-11 03:18:25,568 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:18:26,752 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:18:26,756 | __main__ | INFO | <module>:683 | ============================================================
+2025-09-11 03:18:26,757 | __main__ | INFO | <module>:684 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:18:26,758 | __main__ | INFO | <module>:685 | Environment: development
+2025-09-11 03:18:26,759 | __main__ | INFO | <module>:686 | ============================================================
+2025-09-11 03:18:26,814 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:18:26,832 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:18:39,845 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\test_gps_conversion.py', reloading
+2025-09-11 03:18:39,978 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:18:40,743 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:18:40,747 | __main__ | INFO | <module>:683 | ============================================================
+2025-09-11 03:18:40,749 | __main__ | INFO | <module>:684 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:18:40,749 | __main__ | INFO | <module>:685 | Environment: development
+2025-09-11 03:18:40,750 | __main__ | INFO | <module>:686 | ============================================================
+2025-09-11 03:18:40,806 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:18:40,820 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:19:12,911 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:19:12] "GET / HTTP/1.1" 200 -
+2025-09-11 03:19:13,577 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:19:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-11 03:19:13,658 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:19:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-11 03:19:47,620 | __main__ | INFO | index:595 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250911_031947_20250903_153853.jpg
+2025-09-11 03:19:48,112 | __main__ | INFO | dms_to_decimal:169 | Successfully converted GPS coordinates: (43.0, 6.0, 19.118964310706787) -> 43.10531082341964
+2025-09-11 03:19:48,114 | __main__ | INFO | dms_to_decimal:169 | Successfully converted GPS coordinates: (12.0, 22.0, 31.483154121863798) -> 12.375411987256074
+2025-09-11 03:19:48,115 | __main__ | WARNING | extract_all_exif:485 | Failed to extract GPS coordinates from all strategies
+2025-09-11 03:19:48,381 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:19:48] "POST / HTTP/1.1" 200 -
+2025-09-11 03:19:48,443 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:19:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-11 03:19:49,087 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:19:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-11 03:28:48,868 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\app.py', reloading
+2025-09-11 03:28:49,073 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:36:23,288 | app | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:36:23,293 | app | INFO | dms_to_decimal:123 | Successfully converted: (43.0, 6.0, 13.118964310706787) -> 43.10364415675298
+2025-09-11 03:36:23,295 | app | INFO | dms_to_decimal:123 | Successfully converted: (12.0, 22.0, 31.483154121863798) -> 12.375411987256074
+2025-09-11 03:36:29,739 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:36:29,749 | __main__ | INFO | <module>:561 | ============================================================
+2025-09-11 03:36:29,750 | __main__ | INFO | <module>:562 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:36:29,752 | __main__ | INFO | <module>:563 | Environment: development
+2025-09-11 03:36:29,753 | __main__ | INFO | <module>:564 | ============================================================
+2025-09-11 03:36:29,922 | werkzeug | INFO | _log:97 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-11 03:36:29,924 | werkzeug | INFO | _log:97 | [33mPress CTRL+C to quit[0m
+2025-09-11 03:36:29,932 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:36:31,120 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:36:31,124 | __main__ | INFO | <module>:561 | ============================================================
+2025-09-11 03:36:31,125 | __main__ | INFO | <module>:562 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:36:31,126 | __main__ | INFO | <module>:563 | Environment: development
+2025-09-11 03:36:31,128 | __main__ | INFO | <module>:564 | ============================================================
+2025-09-11 03:36:31,189 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:36:31,208 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:36:45,011 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\app.py', reloading
+2025-09-11 03:36:45,113 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:36:45,846 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:36:45,849 | __main__ | INFO | <module>:561 | ============================================================
+2025-09-11 03:36:45,850 | __main__ | INFO | <module>:562 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:36:45,850 | __main__ | INFO | <module>:563 | Environment: development
+2025-09-11 03:36:45,850 | __main__ | INFO | <module>:564 | ============================================================
+2025-09-11 03:36:45,899 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:36:45,913 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
+2025-09-11 03:37:03,635 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:37:03] "GET / HTTP/1.1" 200 -
+2025-09-11 03:37:04,147 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:37:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-11 03:37:04,157 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:37:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-11 03:37:15,403 | __main__ | INFO | index:473 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250911_033715_20250903_153853.jpg
+2025-09-11 03:37:15,492 | __main__ | INFO | extract_all_exif:324 | Extracted from indexed format: lat=43.10531082341964, lon=12.375411987256074
+2025-09-11 03:37:15,493 | __main__ | INFO | extract_all_exif:359 | GPS coordinates successfully stored: 43.10531082341964, 12.375411987256074
+2025-09-11 03:37:15,803 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:37:15] "POST / HTTP/1.1" 200 -
+2025-09-11 03:37:15,865 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:37:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-11 03:37:16,953 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:37:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-11 03:39:05,362 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [11/Sep/2025 03:39:05] "POST /update-gps HTTP/1.1" 200 -
+2025-09-11 03:40:48,043 | werkzeug | INFO | _log:97 |  * Detected change in 'C:\\Users\\YahyaAdib\\OneDrive - I.T.S. Umbria Made in Italy\\Desktop\\Progetto-Geo-App-Photo-main\\app.py', reloading
+2025-09-11 03:40:48,164 | werkzeug | INFO | _log:97 |  * Restarting with stat
+2025-09-11 03:40:49,123 | __main__ | INFO | init_app:71 | Application configured for development environment
+2025-09-11 03:40:49,126 | __main__ | INFO | <module>:561 | ============================================================
+2025-09-11 03:40:49,127 | __main__ | INFO | <module>:562 | GeoPhoto Enhanced Application Starting
+2025-09-11 03:40:49,129 | __main__ | INFO | <module>:563 | Environment: development
+2025-09-11 03:40:49,129 | __main__ | INFO | <module>:564 | ============================================================
+2025-09-11 03:40:49,189 | werkzeug | WARNING | _log:97 |  * Debugger is active!
+2025-09-11 03:40:49,199 | werkzeug | INFO | _log:97 |  * Debugger PIN: 694-503-831
