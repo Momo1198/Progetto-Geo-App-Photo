@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}GeoPhoto Enhanced - Extract GPS from Photos{% endblock %}</title>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📍</text></svg>">
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Professional GPS extraction and complete EXIF metadata analysis from photos. Extract location data, camera settings, and more.">
+    <meta name="keywords" content="GPS extraction, EXIF data, photo metadata, location data, camera settings">
+    <meta name="author" content="GeoPhoto Enhanced">
+    
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="GeoPhoto Enhanced - Extract GPS from Photos">
+    <meta property="og:description" content="Professional GPS extraction and complete EXIF metadata analysis from photos.">
+    <meta property="og:type" content="website">
+    
+    <!-- Theme color -->
+    <meta name="theme-color" content="#00d2ff">
+</head>
+<body>
+    <!-- Theme Switcher -->
+    <div class="theme-switcher-container">
+        <label class="theme-switcher" for="theme-toggle" title="Toggle Dark/Light Mode">
+            <input type="checkbox" id="theme-toggle" aria-label="Toggle theme">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Processing your photo...</p>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast" class="toast"></div>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">
+                <i class="fas fa-map-marker-alt">📍</i>
+                GeoPhoto Enhanced
+            </h1>
+            <p class="description">Professional GPS extraction with complete EXIF metadata analysis</p>
+        </header>
+
+    <main class="main-content">
+        <!-- Upload Section -->
+        <section class="upload-section">
+            <form id="upload-form" action="/" method="post" enctype="multipart/form-data" class="upload-form">
+                <div class="file-input-container">
+                    <input type="file" name="photo" id="photo" accept="image/*" required>
+                    <label for="photo" class="file-input-label">
+                        <i class="fas fa-cloud-upload-alt">📷</i>
+                        <span class="file-text">Choose a photo...</span>
+                    </label>
+                </div>
+                
+                <div id="file-info" class="file-info"></div>
+                
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-search">🔍</i>
+                    Extract GPS & EXIF Data
+                </button>
+            </form>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section">
+            {% if error %}
+            <div class="result error">
+                <h2 class="result-title">
+                    <i class="fas fa-exclamation-triangle">⚠️</i>
+                    Error
+                </h2>
+                <p class="error-message">{{ error }}</p>
+                <div class="error-help">
+                    <h3>Why might this happen?</h3>
+                    <ul>
+                        <li>The photo doesn't contain GPS location data</li>
+                        <li>The GPS data was removed during editing or transfer</li>
+                        <li>The photo format doesn't support EXIF metadata</li>
+                        <li>The GPS data is corrupted or incomplete</li>
+                    </ul>
+                </div>
+            </div>
+            {% endif %}
+
+            {% if success %}
+            <!-- GPS Results Section -->
+            <div class="result {% if has_gps %}success{% else %}warning{% endif %}">
+                <h2 class="result-title">
+                    {% if has_gps %}
+                        <i class="fas fa-check-circle">✅</i>
+                        Location Found
+                    {% else %}
+                        <i class="fas fa-info-circle">ℹ️</i>
+                        No GPS Data Found
+                    {% endif %}
+                </h2>
+                
+                {% if has_gps %}
+                <div class="location-details">
+                    <p><strong>File:</strong> {{ filename }}</p>
+                    <p><strong>Latitude:</strong> <span class="coordinates" id="current-lat">{{ latitude }}</span></p>
+                    <p><strong>Longitude:</strong> <span class="coordinates" id="current-lon">{{ longitude }}</span></p>
+                </div>
+                
+                <div class="map-actions">
+                    <a href="{{ map_link }}" target="_blank" rel="noopener noreferrer" class="map-link">
+                        <i class="fas fa-external-link-alt">🗺️</i>
+                        View on Google Maps
+                    </a>
+                    <button class="copy-btn" data-clipboard-text="{{ latitude }}, {{ longitude }}">
+                        <i class="fas fa-copy">📋</i>
+                        Copy Coordinates
+                    </button>
+                    <button class="edit-gps-btn" onclick="openGPSEditModal({{ latitude|tojson }}, {{ longitude|tojson }})">
+                        <i class="fas fa-edit">✏️</i>
+                        Edit Coordinates
+                    </button>
+                </div>
+                {% else %}
+                <div class="no-gps-info">
+                    <p>This photo does not contain GPS coordinates.</p>
+                    <button class="add-gps-btn" onclick="openGPSAddModal()">
+                        <i class="fas fa-plus-circle">➕</i>
+                        Add GPS Coordinates
+                    </button>
+                </div>
+                {% endif %}
+            </div>
+
+            <!-- Complete EXIF Data Section -->
+            <div class="result exif-data-section">
+                <h2 class="result-title">
+                    <i class="fas fa-info-circle">📊</i>
+                    Complete EXIF Metadata
+                </h2>
+                
+                <div class="exif-tabs">
+                    <button class="exif-tab active" onclick="switchExifTab('camera')">Camera</button>
+                    <button class="exif-tab" onclick="switchExifTab('image')">Image</button>
+                    <button class="exif-tab" onclick="switchExifTab('datetime')">Date/Time</button>
+                    <button class="exif-tab" onclick="switchExifTab('gps')">GPS</button>
+                    <button class="exif-tab" onclick="switchExifTab('other')">Other</button>
+                </div>
+                
+                <div class="exif-content">
+                    <!-- Camera Tab -->
+                    <div id="camera-tab" class="exif-tab-content active">
+                        <h3>Camera Information</h3>
+                        <div class="exif-grid">
+                            {% if exif_data.camera %}
+                                {% for key, value in exif_data.camera.items() %}
+                                <div class="exif-item">
+                                    <span class="exif-label">{{ key }}:</span>
+                                    <span class="exif-value">{{ value }}</span>
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                <p class="no-data">No camera data available</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <!-- Image Tab -->
+                    <div id="image-tab" class="exif-tab-content">
+                        <h3>Image Properties</h3>
+                        <div class="exif-grid">
+                            {% if exif_data.image %}
+                                {% for key, value in exif_data.image.items() %}
+                                <div class="exif-item">
+                                    <span class="exif-label">{{ key }}:</span>
+                                    <span class="exif-value">
+                                        {% if key == 'file_size' %}
+                                            {{ (value / 1024 / 1024) | round(2) }} MB
+                                        {% elif key == 'width' or key == 'height' %}
+                                            {{ value }}px
+                                        {% else %}
+                                            {{ value }}
+                                        {% endif %}
+                                    </span>
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                <p class="no-data">No image data available</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <!-- DateTime Tab -->
+                    <div id="datetime-tab" class="exif-tab-content">
+                        <h3>Date & Time Information</h3>
+                        <div class="exif-grid">
+                            {% if exif_data.datetime %}
+                                {% for key, value in exif_data.datetime.items() %}
+                                <div class="exif-item">
+                                    <span class="exif-label">{{ key }}:</span>
+                                    <span class="exif-value">{{ value }}</span>
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                <p class="no-data">No date/time data available</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <!-- GPS Tab -->
+                    <div id="gps-tab" class="exif-tab-content">
+                        <h3>GPS Information</h3>
+                        <div class="exif-grid">
+                            {% if exif_data.gps %}
+                                {% for key, value in exif_data.gps.items() %}
+                                <div class="exif-item">
+                                    <span class="exif-label">{{ key }}:</span>
+                                    <span class="exif-value">{{ value }}</span>
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                <p class="no-data">No GPS data available</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    <!-- Other Tab -->
+                    <div id="other-tab" class="exif-tab-content">
+                        <h3>Additional Metadata</h3>
+                        <div class="exif-grid">
+                            {% if exif_data.other %}
+                                {% for key, value in exif_data.other.items() %}
+                                <div class="exif-item">
+                                    <span class="exif-label">{{ key }}:</span>
+                                    <span class="exif-value">{{ value | truncate(50) }}</span>
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                <p class="no-data">No additional metadata available</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            {% if not success and not error %}
+            <div class="welcome-message">
+                <h2>
+                    <i class="fas fa-info-circle">ℹ️</i>
+                    How to Use GeoPhoto Enhanced
+                </h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <i class="fas fa-camera">📸</i>
+                        <h3>Take a Photo</h3>
+                        <p>Use your phone's camera with GPS enabled to capture location data</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-upload">⬆️</i>
+                        <h3>Upload Here</h3>
+                        <p>Drag and drop or click to select your photo file</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-map-marked-alt">📍</i>
+                        <h3>Get Full Analysis</h3>
+                        <p>Receive complete EXIF metadata including GPS, camera settings, and more</p>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </section>
+    </main>
+
+    <!-- GPS Edit/Add Modal -->
+    <div id="gps-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeGPSModal()">&times;</span>
+            <h2 id="modal-title">Edit GPS Coordinates</h2>
+            
+            <div class="modal-body">
+                <div class="coordinate-input-group">
+                    <label for="latitude-input">Latitude:</label>
+                    <input type="number" id="latitude-input" step="0.000001" min="-90" max="90" placeholder="-90 to 90">
+                    <small>Valid range: -90 to 90</small>
+                </div>
+                
+                <div class="coordinate-input-group">
+                    <label for="longitude-input">Longitude:</label>
+                    <input type="number" id="longitude-input" step="0.000001" min="-180" max="180" placeholder="-180 to 180">
+                    <small>Valid range: -180 to 180</small>
+                </div>
+                
+                <div class="coordinate-format-help">
+                    <h4>Coordinate Format Examples:</h4>
+                    <ul>
+                        <li>Karl Marx House: 49.7537, 6.6393</li>
+                        <li>Nietzsche-Haus: 46.4288, 9.7652</li>
+                        <li>Tomb of Schopenhauer: 50.1333, 8.6845</li>
+                        <li>Hegel's house: 48.77301, 9.1769</li>    
+                        <li>Camus' Grave: 43.759, 5.362</li>
+                        <li>Sartre's Grave: 48.8462, 2.33</li>
+                        <li>Monument to V.I. Lenin: 55.814, 49.0647</li>
+                    </ul>
+                    </ul>
+                </div>
+                
+                <div class="modal-actions">
+                    <button class="modal-btn cancel" onclick="closeGPSModal()">Cancel</button>
+                    <button class="modal-btn save" onclick="saveGPSCoordinates()">Save & Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Store image data for GPS editing -->
+    {% if temp_image %}
+    <script>
+        window.tempImageData = "{{ temp_image }}";
+        window.currentFilename = "{{ filename }}";
+    </script>
+    {% endif %}
+
+        <footer class="footer">
+            <p>
+                <i class="fas fa-shield-alt">🔒</i>
+            Karl Marx's "Religion is the opium of the people."
+            </p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                <i class="fas fa-star">⭐</i>
+                Jean-Paul Sartre's "L'enfer, c'est les autres."
+            </p>
+        </footer>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
