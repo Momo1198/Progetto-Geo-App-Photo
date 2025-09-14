@@ -1,5 +1,4 @@
-# GeoPhoto Enhanced Requirements
-# Python 3.8+ recommended
+
 
 # Core Flask Framework
 Flask==2.3.3

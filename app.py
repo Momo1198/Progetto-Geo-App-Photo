@@ -18,7 +18,7 @@ from PIL import Image
 from PIL.ExifTags import TAGS, GPSTAGS
 import piexif
 
-# ========================= ENVIRONMENT SETUP =========================
+
 try:
     from dotenv import load_dotenv
     env_mode = os.environ.get('FLASK_ENV', 'development')
@@ -32,7 +32,7 @@ try:
 except ImportError:
     print("⚠ python-dotenv not installed. Using system environment variables.")
 
-# ========================= LOGGING CONFIGURATION =========================
+
 logging.basicConfig(
     level=logging.DEBUG if os.environ.get('FLASK_DEBUG', 'False').lower() == 'true' else logging.INFO,
     format='%(asctime)s | %(name)s | %(levelname)s | %(funcName)s:%(lineno)d | %(message)s',
@@ -43,7 +43,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# ========================= CONFIGURATION MANAGEMENT =========================
+
 class ApplicationConfig:
     SECRET_KEY = os.environ.get('SECRET_KEY', 'dev-secret-key-please-change-in-production')
     FLASK_ENV = os.environ.get('FLASK_ENV', 'development')
@@ -63,7 +63,7 @@ class ApplicationConfig:
                 app.config[key] = getattr(cls, key)
         logger.info(f"Application configured for {cls.FLASK_ENV} environment")
 
-# ========================= ENHANCED GPS & EXIF EXTRACTOR =========================
+
 class EnhancedExifExtractor:
     """
     Enhanced extractor for complete EXIF data including GPS with editing capabilities.
@@ -81,8 +81,8 @@ class EnhancedExifExtractor:
         """Convert DMS to decimal degrees with enhanced format support."""
         try:
             logger.debug(f"Converting DMS data: {dms_data}, ref: {ref}, type: {type(dms_data)}")
+
             
-            # Handle byte string references
             if isinstance(ref, bytes):
                 ref = ref.decode('utf-8').strip()
             
@@ -93,23 +93,23 @@ class EnhancedExifExtractor:
             if ref not in ['N', 'S', 'E', 'W']:
                 logger.warning(f"Invalid reference direction: {ref}")
                 return None
+
             
-            # CRITICAL FIX: Handle tuple with 3 float values directly
-            # This is the format shown in your debug output: (43.0, 6.0, 19.118964310706787)
             if isinstance(dms_data, (tuple, list)) and len(dms_data) == 3:
+ 
                 try:
-                    # Check if all values are already numeric (floats or ints)
+                    
                     if all(isinstance(x, (int, float)) for x in dms_data):
                         degrees = float(dms_data[0])
                         minutes = float(dms_data[1])
                         seconds = float(dms_data[2])
                         
                         logger.debug(f"Direct tuple conversion: d={degrees}, m={minutes}, s={seconds}")
+                    
                         
-                        # Calculate decimal degrees
                         decimal = degrees + (minutes / 60.0) + (seconds / 3600.0)
                         
-                        # Apply reference direction
+                   
                         if ref in ['S', 'W']:
                             decimal = -decimal
                         
@@ -118,8 +118,8 @@ class EnhancedExifExtractor:
                         
                 except Exception as e:
                     logger.debug(f"Failed direct tuple conversion: {e}")
+          
             
-            # Handle other formats (IFDRational, etc.)
             components = []
             for i, value in enumerate(dms_data):
                 try:
@@ -149,8 +149,8 @@ class EnhancedExifExtractor:
             
             if ref in ['S', 'W']:
                 decimal = -decimal
+          
             
-            # Validate ranges
             if ref in ['N', 'S'] and not (-90 <= decimal <= 90):
                 logger.warning(f"Latitude {decimal} out of valid range")
                 return None
@@ -171,8 +171,8 @@ class EnhancedExifExtractor:
         minutes_decimal = (abs_decimal - degrees) * 60
         minutes = int(minutes_decimal)
         seconds = (minutes_decimal - minutes) * 60
+      
         
-        # Convert to EXIF format (numerator, denominator)
         degrees_rational = (degrees, 1)
         minutes_rational = (minutes, 1)
         seconds_rational = (int(seconds * 10000), 10000)
@@ -291,9 +291,8 @@ class EnhancedExifExtractor:
                     # Initialize coordinates
                     lat = None
                     lon = None
+       
                     
-                    # PRIORITY 1: Handle indexed format (as shown in your debug output)
-                    # Your data shows: 1: 'N', 2: (43.0, 6.0, ...), 3: 'E', 4: (12.0, 22.0, ...)
                     if 1 in gps_ifd and 2 in gps_ifd and 3 in gps_ifd and 4 in gps_ifd:
                         try:
                             logger.debug("Found indexed GPS format")
@@ -301,16 +300,16 @@ class EnhancedExifExtractor:
                             lat_coords = gps_ifd[2]
                             lon_ref = gps_ifd[3]
                             lon_coords = gps_ifd[4]
+      
                             
-                            # Handle byte string references
                             if isinstance(lat_ref, bytes):
                                 lat_ref = lat_ref.decode('utf-8').strip()
                             if isinstance(lon_ref, bytes):
                                 lon_ref = lon_ref.decode('utf-8').strip()
                             
                             logger.debug(f"Indexed format - Lat: {lat_coords} {lat_ref}, Lon: {lon_coords} {lon_ref}")
+      
                             
-                            # Convert to decimal
                             lat = EnhancedExifExtractor.dms_to_decimal(lat_coords, lat_ref)
                             lon = EnhancedExifExtractor.dms_to_decimal(lon_coords, lon_ref)
                             
@@ -318,8 +317,8 @@ class EnhancedExifExtractor:
                             
                         except Exception as e:
                             logger.debug(f"Failed to extract from indexed format: {e}")
+      
                     
-                    # PRIORITY 2: Standard GPS tag extraction
                     if (lat is None or lon is None) and all(k in gps_ifd for k in ['GPSLatitude', 'GPSLatitudeRef', 'GPSLongitude', 'GPSLongitudeRef']):
                         try:
                             logger.debug("Attempting standard GPS extraction")
@@ -328,8 +327,8 @@ class EnhancedExifExtractor:
                             lat_ref = gps_ifd['GPSLatitudeRef']
                             lon_data = gps_ifd['GPSLongitude']
                             lon_ref = gps_ifd['GPSLongitudeRef']
+     
                             
-                            # Handle byte string references
                             if isinstance(lat_ref, bytes):
                                 lat_ref = lat_ref.decode('utf-8').strip()
                             if isinstance(lon_ref, bytes):
@@ -342,10 +341,11 @@ class EnhancedExifExtractor:
                             
                         except Exception as e:
                             logger.debug(f"Failed standard extraction: {e}")
+     
                     
-                    # Store successful GPS coordinates
+     
                     if lat is not None and lon is not None:
-                        # Validate coordinates are reasonable
+     
                         if -90 <= lat <= 90 and -180 <= lon <= 180:
                             exif_data['gps']['latitude'] = lat
                             exif_data['gps']['longitude'] = lon
@@ -354,13 +354,14 @@ class EnhancedExifExtractor:
                             logger.warning(f"GPS coordinates out of range: lat={lat}, lon={lon}")
                     else:
                         logger.warning("Failed to extract GPS coordinates")
-                        # Debug: Store raw GPS data for manual inspection
+     
                         exif_data['gps']['debug_raw_data'] = str(gps_ifd)
                         logger.debug(f"Raw GPS data stored for debugging: {gps_ifd}")
                     
-                    # Process other GPS tags
+     
+     
                     for tag, value in gps_ifd.items():
-                        # Skip already processed tags
+     
                         if tag in [1, 2, 3, 4, 'GPSLatitude', 'GPSLatitudeRef', 'GPSLongitude', 'GPSLongitudeRef']:
                             continue
                         
@@ -393,11 +394,12 @@ class EnhancedExifExtractor:
             img = Image.open(image_path)
             exif_dict = piexif.load(image_path)
             
-            # Convert coordinates to DMS
+           
             lat_dms, lat_ref = EnhancedExifExtractor.decimal_to_dms(latitude, True)
             lon_dms, lon_ref = EnhancedExifExtractor.decimal_to_dms(longitude, False)
+          
             
-            # Create GPS dictionary
+          
             gps_ifd = {
                 piexif.GPSIFD.GPSVersionID: (2, 3, 0, 0),
                 piexif.GPSIFD.GPSLatitude: lat_dms,
@@ -420,11 +422,11 @@ class EnhancedExifExtractor:
             logger.error(f"Failed to update GPS coordinates: {e}")
             return None
 
-# ========================= FLASK APPLICATION =========================
+
 app = Flask(__name__)
 ApplicationConfig.init_app(app)
 
-# ========================= ERROR HANDLERS =========================
+
 @app.errorhandler(404)
 def not_found_error(error):
     return render_template('index.html', error='Page not found'), 404
@@ -438,7 +440,7 @@ def internal_error(error):
     logger.error(f"Internal error: {error}")
     return render_template('index.html', error='Internal server error occurred'), 500
 
-# ========================= MAIN ROUTES =========================
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
     """Main route - handles file upload and EXIF extraction."""
@@ -479,8 +481,8 @@ def index():
                 response_data['map_link'] = f"https://www.google.com/maps?q={exif_data['gps']['latitude']},{exif_data['gps']['longitude']}"
                 response_data['latitude'] = round(exif_data['gps']['latitude'], 6)
                 response_data['longitude'] = round(exif_data['gps']['longitude'], 6)
+          
             
-            # Store image temporarily in session for GPS editing
             with open(filepath, 'rb') as f:
                 img_data = base64.b64encode(f.read()).decode()
                 response_data['temp_image'] = img_data
@@ -512,19 +514,19 @@ def update_gps():
         longitude = float(data['longitude'])
         filename = data.get('filename', 'image.jpg')
         
-        # Validate coordinates
+        
         if not (-90 <= latitude <= 90) or not (-180 <= longitude <= 180):
             return jsonify({'error': 'Invalid coordinates'}), 400
         
-        # Save temporary file
+        
         temp_path = os.path.join(app.config['UPLOAD_FOLDER'], f"temp_{filename}")
         with open(temp_path, 'wb') as f:
             f.write(image_data)
         
-        # Update GPS coordinates
+        
         output = EnhancedExifExtractor.update_gps_coordinates(temp_path, latitude, longitude)
         
-        # Clean up temp file
+        
         os.remove(temp_path)
         
         if output:
@@ -549,7 +551,7 @@ def health_check():
         'timestamp': datetime.now().isoformat()
     }), 200
 
-# ========================= APPLICATION ENTRY POINT =========================
+
 if __name__ == '__main__':
     logger.info("="*60)
     logger.info("GeoPhoto Enhanced Application Starting")

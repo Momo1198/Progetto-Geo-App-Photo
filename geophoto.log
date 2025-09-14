@@ -597,3 +597,187 @@
 2025-09-12 04:05:15,356 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [12/Sep/2025 04:05:15] "POST / HTTP/1.1" 200 -
 2025-09-12 04:05:15,415 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [12/Sep/2025 04:05:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 2025-09-12 04:05:16,943 | werkzeug | INFO | _log:97 | 127.0.0.1 - - [12/Sep/2025 04:05:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-14 01:43:18,119 | app | INFO | init_app:64 | Application configured for development environment
+2025-09-14 01:43:18,137 | werkzeug | INFO | _log:187 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.18.0.2:5000
+2025-09-14 01:43:18,138 | werkzeug | INFO | _log:187 | [33mPress CTRL+C to quit[0m
+2025-09-14 01:43:18,174 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:43:19,548 | app | INFO | init_app:64 | Application configured for development environment
+2025-09-14 01:43:44,124 | app | INFO | index:466 | File saved: /app/uploads/20250914_014343_20250903_153853.jpg
+2025-09-14 01:43:44,321 | app | INFO | extract_all_exif:317 | Extracted from indexed format: lat=43.10531082341964, lon=12.375411987256074
+2025-09-14 01:43:44,323 | app | INFO | extract_all_exif:352 | GPS coordinates successfully stored: 43.10531082341964, 12.375411987256074
+2025-09-14 01:43:45,018 | werkzeug | INFO | _log:187 | 172.18.0.1 - - [14/Sep/2025 01:43:45] "POST / HTTP/1.1" 200 -
+2025-09-14 01:43:45,227 | werkzeug | INFO | _log:187 | 172.18.0.1 - - [14/Sep/2025 01:43:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-14 01:43:45,977 | werkzeug | INFO | _log:187 | 172.18.0.1 - - [14/Sep/2025 01:43:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-14 01:48:26,798 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:48:27,229 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:48:29,137 | app | INFO | init_app:63 | Application configured for development environment
+2025-09-14 01:48:33,915 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:48:34,106 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:48:35,144 | app | INFO | init_app:62 | Application configured for development environment
+2025-09-14 01:48:38,664 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:48:38,753 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:48:39,802 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:48:42,192 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:48:42,308 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:48:43,351 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:48:47,949 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:48:48,051 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:48:49,027 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:48:52,568 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:48:52,695 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:48:53,733 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:48:58,293 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:48:58,393 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:48:59,441 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:49:03,934 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:49:04,035 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:49:05,047 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:49:10,658 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:49:10,758 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:49:11,747 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:49:14,127 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:49:14,251 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:49:15,310 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:49:22,166 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:49:22,340 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:49:23,517 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:49:33,422 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:49:33,537 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:49:34,622 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:49:39,168 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:49:39,273 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:49:40,378 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:49:48,266 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:49:48,389 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:49:49,401 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:49:51,793 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:49:51,914 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:49:53,009 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:49:55,381 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:49:55,505 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:49:56,511 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:49:58,937 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:49:59,059 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:50:00,158 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:50:05,882 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:50:06,008 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:50:07,045 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:50:09,542 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:50:09,833 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:50:10,944 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:50:14,504 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:50:14,605 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:50:15,664 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:50:17,018 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:50:17,170 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:50:18,401 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:50:19,728 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:50:19,819 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:50:20,846 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:50:25,499 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:50:25,603 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:50:26,656 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:50:27,982 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:50:28,120 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:50:29,224 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:50:34,890 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:50:35,033 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:50:36,046 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:50:38,431 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:50:38,518 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:50:39,538 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:50:41,911 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:50:42,042 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:50:43,075 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:50:44,372 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:50:44,454 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:50:45,525 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:50:53,322 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:50:53,454 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:50:54,521 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:51:00,170 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:51:00,280 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:51:01,331 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:51:06,970 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:51:07,116 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:51:08,122 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:51:09,470 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:51:09,584 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:51:10,604 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:51:15,191 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:51:15,288 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:51:16,322 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:51:18,691 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:51:18,798 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:51:19,833 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:51:27,668 | werkzeug | INFO | _log:187 |  * Detected change in '/app/app.py', reloading
+2025-09-14 01:51:27,827 | werkzeug | INFO | _log:187 |  * Restarting with stat
+2025-09-14 01:51:28,904 | app | INFO | init_app:61 | Application configured for development environment
+2025-09-14 01:56:54,004 | app | INFO | index:437 | File saved: /app/uploads/20250914_015653_20250903_153853.jpg
+2025-09-14 01:56:54,229 | app | INFO | extract_all_exif:300 | Extracted from indexed format: lat=43.10531082341964, lon=12.375411987256074
+2025-09-14 01:56:54,230 | app | INFO | extract_all_exif:331 | GPS coordinates successfully stored: 43.10531082341964, 12.375411987256074
+2025-09-14 01:56:55,421 | werkzeug | INFO | _log:187 | 172.18.0.1 - - [14/Sep/2025 01:56:55] "POST / HTTP/1.1" 200 -
+2025-09-14 01:56:55,738 | werkzeug | INFO | _log:187 | 172.18.0.1 - - [14/Sep/2025 01:56:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-14 01:56:56,930 | werkzeug | INFO | _log:187 | 172.18.0.1 - - [14/Sep/2025 01:56:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2025-09-14 04:30:33,032 | __main__ | INFO | init_app:64 | Application configured for development environment
+2025-09-14 04:30:33,036 | __main__ | INFO | <module>:554 | ============================================================
+2025-09-14 04:30:33,037 | __main__ | INFO | <module>:555 | GeoPhoto Enhanced Application Starting
+2025-09-14 04:30:33,037 | __main__ | INFO | <module>:556 | Environment: development
+2025-09-14 04:30:33,038 | __main__ | INFO | <module>:557 | ============================================================
+2025-09-14 04:30:33,292 | werkzeug | INFO | _log:96 | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-09-14 04:30:33,293 | werkzeug | INFO | _log:96 | [33mPress CTRL+C to quit[0m
+2025-09-14 04:30:33,322 | werkzeug | INFO | _log:96 |  * Restarting with stat
+2025-09-14 04:30:34,035 | __main__ | INFO | init_app:64 | Application configured for development environment
+2025-09-14 04:30:34,037 | __main__ | INFO | <module>:554 | ============================================================
+2025-09-14 04:30:34,039 | __main__ | INFO | <module>:555 | GeoPhoto Enhanced Application Starting
+2025-09-14 04:30:34,039 | __main__ | INFO | <module>:556 | Environment: development
+2025-09-14 04:30:34,039 | __main__ | INFO | <module>:557 | ============================================================
+2025-09-14 04:30:34,056 | werkzeug | WARNING | _log:96 |  * Debugger is active!
+2025-09-14 04:30:34,077 | werkzeug | INFO | _log:96 |  * Debugger PIN: 694-503-831
+2025-09-14 04:30:46,821 | __main__ | ERROR | index:491 | Unexpected error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+2025-09-14 04:30:46,894 | werkzeug | INFO | _log:96 | 127.0.0.1 - - [14/Sep/2025 04:30:46] "GET / HTTP/1.1" 200 -
+2025-09-14 04:30:46,940 | __main__ | ERROR | index:492 | Traceback (most recent call last):
+  File "C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\app.py", line 449, in index
+    if 'photo' not in request.files:
+                      ^^^^^^^^^^^^^
+  File "C:\Users\YahyaAdib\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\utils.py", line 106, in __get__
+    value = self.fget(obj)  # type: ignore
+            ^^^^^^^^^^^^^^
+  File "C:\Users\YahyaAdib\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\wrappers\request.py", line 495, in files
+    self._load_form_data()
+  File "C:\Users\YahyaAdib\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\flask\wrappers.py", line 114, in _load_form_data
+    super()._load_form_data()
+  File "C:\Users\YahyaAdib\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\wrappers\request.py", line 267, in _load_form_data
+    data = parser.parse(
+           ^^^^^^^^^^^^^
+  File "C:\Users\YahyaAdib\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\formparser.py", line 240, in parse
+    return parse_func(stream, mimetype, content_length, options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\YahyaAdib\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\formparser.py", line 265, in _parse_multipart
+    form, files = parser.parse(stream, boundary, content_length)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\YahyaAdib\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\formparser.py", line 369, in parse
+    for data in _chunk_iter(stream.read, self.buffer_size):
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\YahyaAdib\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\formparser.py", line 414, in _chunk_iter
+    data = read(size)
+           ^^^^^^^^^^
+  File "C:\Users\YahyaAdib\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\wsgi.py", line 562, in readinto
+    self.on_disconnect()
+  File "C:\Users\YahyaAdib\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\werkzeug\wsgi.py", line 499, in on_disconnect
+    raise ClientDisconnected()
+werkzeug.exceptions.ClientDisconnected: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+2025-09-14 04:30:46,944 | werkzeug | INFO | _log:96 | 127.0.0.1 - - [14/Sep/2025 04:30:46] "POST / HTTP/1.1" 200 -
+2025-09-14 04:30:47,514 | werkzeug | INFO | _log:96 | 127.0.0.1 - - [14/Sep/2025 04:30:47] "GET /static/js/script.js HTTP/1.1" 200 -
+2025-09-14 04:30:47,531 | werkzeug | INFO | _log:96 | 127.0.0.1 - - [14/Sep/2025 04:30:47] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-09-14 04:30:58,339 | __main__ | INFO | index:466 | File saved: C:\Users\YahyaAdib\OneDrive - I.T.S. Umbria Made in Italy\Desktop\Progetto-Geo-App-Photo-main\uploads\20250914_043058_20250903_153853.jpg
+2025-09-14 04:30:58,857 | __main__ | INFO | extract_all_exif:317 | Extracted from indexed format: lat=43.10531082341964, lon=12.375411987256074
+2025-09-14 04:30:58,858 | __main__ | INFO | extract_all_exif:352 | GPS coordinates successfully stored: 43.10531082341964, 12.375411987256074
+2025-09-14 04:30:59,154 | werkzeug | INFO | _log:96 | 127.0.0.1 - - [14/Sep/2025 04:30:59] "POST / HTTP/1.1" 200 -
+2025-09-14 04:30:59,210 | werkzeug | INFO | _log:96 | 127.0.0.1 - - [14/Sep/2025 04:30:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-09-14 04:31:00,177 | werkzeug | INFO | _log:96 | 127.0.0.1 - - [14/Sep/2025 04:31:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
