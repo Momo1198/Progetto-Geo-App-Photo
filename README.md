@@ -6,7 +6,7 @@
 ### Quick Start
 ```bash
 # Clone the project
-git clone https://github.com/[your-username]/Progetto-Geo-App-Photo-main.git
+git clone https://github.com/Momo1198/Progetto-Geo-App-Photo.git
 cd Progetto-Geo-App-Photo-main
 
 # Build and run with Docker
