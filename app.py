@@ -391,35 +391,55 @@ class EnhancedExifExtractor:
     def update_gps_coordinates(image_path, latitude, longitude):
         """Update or add GPS coordinates to an image."""
         try:
+            # Open original image
             img = Image.open(image_path)
-            exif_dict = piexif.load(image_path)
-            
-           
+            temp_jpeg_path = None
+
+            # If not JPEG, convert to JPEG for EXIF support
+            if img.format != 'JPEG':
+                rgb = img.convert('RGB')
+                temp_jpeg_path = image_path + "_converted.jpg"
+                rgb.save(temp_jpeg_path, format='JPEG')
+                # Use the converted file for piexif/load and for final save
+                image_for_piexif = temp_jpeg_path
+                img = Image.open(temp_jpeg_path)
+            else:
+                image_for_piexif = image_path
+
+            # Load (possibly empty) EXIF dict and prepare GPS IFD
+            exif_dict = piexif.load(image_for_piexif)
+
             lat_dms, lat_ref = EnhancedExifExtractor.decimal_to_dms(latitude, True)
             lon_dms, lon_ref = EnhancedExifExtractor.decimal_to_dms(longitude, False)
-          
-            
-          
+
             gps_ifd = {
                 piexif.GPSIFD.GPSVersionID: (2, 3, 0, 0),
+                piexif.GPSIFD.GPSLatitudeRef: lat_ref.encode() if isinstance(lat_ref, str) else lat_ref,
                 piexif.GPSIFD.GPSLatitude: lat_dms,
-                piexif.GPSIFD.GPSLatitudeRef: lat_ref.encode(),
+                piexif.GPSIFD.GPSLongitudeRef: lon_ref.encode() if isinstance(lon_ref, str) else lon_ref,
                 piexif.GPSIFD.GPSLongitude: lon_dms,
-                piexif.GPSIFD.GPSLongitudeRef: lon_ref.encode(),
             }
-            
+
             exif_dict["GPS"] = gps_ifd
             exif_bytes = piexif.dump(exif_dict)
-            
-            # Save to BytesIO for download
+
+            # Save to BytesIO and return
             output = BytesIO()
-            img.save(output, format=img.format, exif=exif_bytes)
+            img.save(output, format='JPEG', exif=exif_bytes)
             output.seek(0)
-            
+
+            # Cleanup temp file if created
+            if temp_jpeg_path and os.path.exists(temp_jpeg_path):
+                try:
+                    os.remove(temp_jpeg_path)
+                except Exception:
+                    pass
+
             return output
-            
+
         except Exception as e:
             logger.error(f"Failed to update GPS coordinates: {e}")
+            logger.debug(traceback.format_exc())
             return None
 
 
